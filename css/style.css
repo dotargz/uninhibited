@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	background-image: url("/img/sand.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+	color: #000;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+#title {
+	font-family: "Space Mono", monospace;
+	font-size: 8rem;
+	font-weight: 900;
+    mix-blend-mode: difference;
+    color: #fff;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 2rem;
+    width: 100vw;
+
+}
+
+@media (max-width: 768px) {
+    #title {
+        flex-direction: column;
+        font-size: 2rem;
+        height: 100%;
+    }
+}
